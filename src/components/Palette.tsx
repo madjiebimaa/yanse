@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
 import { trimText } from '../lib/utils';
+import { useColorActions } from '../store/color';
 import { Color } from '../types/color';
 
 interface PaletteProps {
@@ -9,12 +10,15 @@ interface PaletteProps {
 }
 
 export default function Palette({ color, index = 1 }: PaletteProps) {
+  const colorActions = useColorActions();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 300 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.03 * index }}
-      className="flex hover:bg-white"
+      className="flex cursor-pointer hover:bg-white"
+      onClick={() => colorActions.selectPrimaryColor(color)}
     >
       <div
         style={{ backgroundColor: `#${color.rgb}` }}

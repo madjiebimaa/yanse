@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        xano: ['Xano Mincho', 'sans-serif'],
+        bpt: ['Bptypewrite', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

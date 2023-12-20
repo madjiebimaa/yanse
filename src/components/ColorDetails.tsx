@@ -5,6 +5,7 @@ import CMYKStats from './CMYKStats';
 import RGBStats from './RGBStats';
 
 import { usePrimaryColor, useSecondaryColor } from '../store/color';
+import ColorTools from './ColorTools';
 
 export default function ColorDetails() {
   const primaryColor = usePrimaryColor();
@@ -60,6 +61,7 @@ export default function ColorDetails() {
               : 'The Traditional Colors of Japan'}
           </h2>
         </div>
+        <ColorTools />
       </div>
     </motion.section>
   );

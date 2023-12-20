@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# <img alt="Yánsè Logo" src="./src/assets/svgs/yanse.svg" height="20"/> [Yánsè](https://yanse.vercel.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The traditional colors of Japan 🇯🇵.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Select color for preview RGB and CMYK values
+- Select random color
+- Copy RGB value
 
-## Expanding the ESLint configuration
+## Setup In Local
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- `node` version `20.10.0` or higher installed on your machine
+- `npm` package manager version `10.2.3` or higher installed on your machine
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Development
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Install all dependencies, by running `npm install`
+- Run in local, using command `npm run dev`
+
+## Credits
+
+- [Vite.js](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
+- [Framer Motion](https://www.framer.com/motion/)
+- Icons by [Lucide React](https://lucide.dev/guide/packages/lucide-react)
+- Background SVGs by [Hero Patterns](https://heropatterns.com/)
+
+Copyright © 2023 by Muhammad Adjie Bimaditya

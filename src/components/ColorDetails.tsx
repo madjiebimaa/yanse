@@ -1,6 +1,9 @@
 import { motion, useAnimate } from 'framer-motion';
 import { useEffect } from 'react';
 
+import CMYKStats from './CMYKStats';
+import RGBStats from './RGBStats';
+
 import { usePrimaryColor, useSecondaryColor } from '../store/color';
 
 export default function ColorDetails() {
@@ -34,6 +37,12 @@ export default function ColorDetails() {
       transition={{ ease: 'easeInOut', duration: 0.7 }}
       className="sticky top-0 flex-1 flex flex-col justify-between max-w-2xl"
     >
+      {primaryColor ? (
+        <>
+          <RGBStats rgb={primaryColor.Drgb} />
+          <CMYKStats cmyk={primaryColor.cmyk} />
+        </>
+      ) : null}
       <div className="flex-1 flex justify-between items-end p-4">
         <div ref={scope} className="flex items-end gap-4">
           <h1
